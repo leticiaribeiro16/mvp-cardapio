@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body id='body-pd'>
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> 
+                <a href="#" class="nav_logo"> 
+                <i><img src="./assets/logo1.svg" alt="..." height='60vh'></i> 
+                <!-- <span class="nav_logo-name">MVP</span>  -->
+                </a>
+                <div class="nav_list"> 
+                    <a href="#" class="nav_link active"> 
+                        <i class='bx bx-grid-alt nav_icon'></i> 
+                        <span class="nav_name">Home</span> 
+                    </a> 
+                    <a href="#" class="nav_link active"> 
+                        <i class='bx bx-food-menu nav_icon'></i> 
+                        <span class="nav_name">Produtos</span> 
+                    </a> 
+                    <a href="#" class="nav_link active"> 
+                        <i class='bx bx-basket nav_icon'></i> 
+                        <span class="nav_name">Meus Pedidos</span> 
+                    </a> 
+                    <hr style="color: white; margin: 1.5rem;">
+                    <a href="#" class="nav_link active"> 
+                        <i class='bx bx-user nav_icon'></i> 
+                        <span class="nav_name">Usuários</span> 
+                    </a> 
+                    <a href="#" class="nav_link active"> 
+                        <i class='bx bx-star nav_icon'></i> 
+                        <span class="nav_name">Estoque</span> 
+                    </a> 
+            
+                </div> 
+                <a href="#" class="nav_link log-out"> 
+                    <i class='bx bx-log-out nav_icon'></i> 
+                    <span class="nav_name">Sair</span> 
+                </a>
+        </nav>
+    </div>
+    <main>
+        <section id="header-section">
+            <h1>Olá, {{usuário.nome}}</h1>
+            <button class="circle-carrinho">
+                <i class='bx bx-basket nav_icon'></i>
+            </button>
+        </section>
+        <section id="main-body">
+            <h2>Cardápio de Hoje</h2>
+                <div id="group-cards">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                        <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                        <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                        <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                        <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                        <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                        <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                        <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                        <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            <!-- MAIS VENDIDOS -->
+            <h2>Mais vendidos</h2>
+            <div id="group-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                    <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                    <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                    <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                    <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                    <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                    <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://anamariabraga.globo.com/wp-content/uploads/2017/12/coxinha-cremosa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; font-size: 2rem; font-weight: 700;">Coxinha</h5>
+                    <p class="card-text" style="text-align: center; font-size: 1.5rem;">R$ 2,00</p>
+                    <a href="#" class="btn btn-success" style="display: flex; justify-content: center; text-align: center;">Comprar</a>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </section>
+
+
+
+
+
+        <!-- MODAL -->
+      
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
